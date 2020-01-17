@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Emil Manvelyan</h1>
+    <p id="date"></p>
+    <form  class="calc_form">
+        <div class="input_raw">
+            <label for="defaultMarkup">Default Markup</label>
+            <input class="input" type="text" id="defaultMarkup">
+            <div class="log" id="defaultMarkupLog"></div>
+        </div>
+        <div class="input_raw">
+            <label for="cost">Cost</label>
+            <input class="input" type="text" id="cost">
+            <div class="log" id="costLog"></div>
+        </div>
+        <div class="input_raw">
+            <label for="tax">Tax Rate</label>
+            <select class="input" name="" id="tax">
+                <option value="7">7%</option>
+                <option value="20">20%</option>
+                <option value="0">0%</option>
+            </select>
+        </div>
+        <div class="input_raw">
+            <label for="rounding">Rounding Rule</label>
+            <select class="input" name="" id="rounding">
+                <option value="95">‘95’</option>
+                <option value="99">‘99’</option>
+                <option value="00">‘00’</option>
+            </select>
+        </div>
+        <div class="input_raw">
+            <label for="pricing">Pricing Mode</label>
+            <select class="input" name="" id="pricing">
+                <option value="0">Tax Exclusive Prices</option>
+                <option value="1">Tax Inclusive Prices</option>
+            </select>
+        </div>
+        <div class="output">
+            <div class="output_raw">
+                <span>Tax Inclusive Price</span>
+                <span id="t_i_p">0.00</span>
+            </div>
+            <div class="output_raw">
+                <span>Tax Exclusive Price</span>
+                <span id="t_e_p">0.00</span>
+            </div>
+            <div class="output_raw">
+                <span>Gross Profit (%)</span>
+                <span id="grossProfitP">0.00</span>
+            </div>
+            <div class="output_raw">
+                <span>Gross Profit ($)</span>
+                <span id="grossProfit">0.00</span>
+            </div>
+        </div>
+        <button type="button" id="calculationButton">Calculate</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
